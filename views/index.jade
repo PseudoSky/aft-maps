@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  button#capture.controls Convert
+  input#pac-input.controls(type='text' placeholder='Search')
+  div#map
+
+  script(src='/javascripts/index.js')
+  script(
+    async=true,
+    defer=true,
+    src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBZXFAtPgMN3eF3Ck7P-_vpr2C_4WbPIlA&callback=initMap&libraries=places'
+  )
